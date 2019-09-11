@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen/pages/reset-password_page.dart';
+import 'package:login_screen/pages/signup_page.dart';
 
 class LoginPage extends StatelessWidget {
   @override
