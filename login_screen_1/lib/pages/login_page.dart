@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_screen/pages/reset-password.page.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -53,11 +54,16 @@ class LoginPage extends StatelessWidget {
               height: 40,
               alignment: Alignment.centerRight,
               child: FlatButton(
-                child: Text(
-                  "Recuperar Senha",
-                ),
-                onPressed: () {},
-              ),
+                  child: Text(
+                    "Recuperar Senha",
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ResetPasswordPage()),
+                    );
+                  }),
             ),
             SizedBox(
               height: 40,
