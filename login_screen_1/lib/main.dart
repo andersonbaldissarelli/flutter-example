@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen/pages/login_page.dart';
 
+//create by isadora oliveira
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
