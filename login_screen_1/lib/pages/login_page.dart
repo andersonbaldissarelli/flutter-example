@@ -81,6 +81,84 @@ class LoginPage extends StatelessWidget {
                   Radius.circular(5),
                 ),
               ),
+              child: SizedBox.expand(
+                child: FlatButton(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "Login",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                      Container(
+                        child: SizedBox(
+                          child: Image.asset("assets/bone.png"),
+                          height: 28,
+                          width: 28,
+                        ),
+                      ),
+                    ],
+                  ),
+                  onPressed: () {},
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 60,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                color: Color(0xFF3C5A99),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5),
+                ),
+              ),
+              child: SizedBox.expand(
+                child: FlatButton(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "Login com Facebook",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                      Container(
+                        child: SizedBox(
+                          child: Image.asset("assets/fb-icon.png"),
+                          height: 28,
+                          width: 28,
+                        ),
+                      ),
+                    ],
+                  ),
+                  onPressed: () {},
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 40,
+              child: FlatButton(
+                child: Text(
+                  "Cadastre-se",
+                  textAlign: TextAlign.center,
+                ),
+                onPressed: () {},
+              ),
             ),
           ],
         ),
