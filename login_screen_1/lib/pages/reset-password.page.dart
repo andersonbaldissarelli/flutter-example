@@ -21,6 +21,28 @@ class ResetPasswordPage extends StatelessWidget {
               width: 200,
               height: 200,
               child: Image.asset("assets/reset-password-icon.png"),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Text(
+              "Esqueceu sua senha?",
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.w500,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              "Por favor, informe o E-mail associado a sua conta que enviaremos um link para o mesmo com as instruções para restauração de sua senha.",
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+              ),
+              textAlign: TextAlign.center,
             )
           ],
         ),
