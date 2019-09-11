@@ -164,7 +164,12 @@ class LoginPage extends StatelessWidget {
                   "Cadastre-se",
                   textAlign: TextAlign.center,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SignupPage()),
+                  );
+                },
               ),
             ),
           ],
