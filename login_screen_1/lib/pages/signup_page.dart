@@ -102,6 +102,52 @@ class SignupPage extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
+            Container(
+              height: 60,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  stops: [0.3, 1],
+                  colors: [
+                    Color(0xFFF58524),
+                    Color(0xFFF92B7F),
+                  ],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5),
+                ),
+              ),
+              child: SizedBox.expand(
+                child: FlatButton(
+                  child: Text(
+                    "Cadastrar",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  onPressed: () {},
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 40,
+              alignment: Alignment.center,
+              child: FlatButton(
+                child: Text(
+                  "Cancelar",
+                  textAlign: TextAlign.center,
+                ),
+                onPressed: () => Navigator.pop(context, false),
+              ),
+            ),
           ],
         ),
       ),
