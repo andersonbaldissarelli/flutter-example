@@ -1,4 +1,4 @@
-# Tela de Login, Cadastro e Recuperar Senha
+# Tela de Login, Recuperar Senha e Cadastrar
 
 - Utilização de rotas para navegação entre as telas
 - Abaixo todas as telas do aplicativo
