@@ -33,7 +33,11 @@ class _MyAppState extends State<MyApp> {
       CustomIcons.cart,
       size: 30.0,
     ),
-    Image.asset("assets/profile.png", width: 30.0, height: 30.0),
+    Image.asset(
+      "assets/profile.png",
+      width: 30.0,
+      height: 30.0,
+    ),
   ];
 
   @override
@@ -63,7 +67,7 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 60.0,
+        height: 63.0,
         decoration: BoxDecoration(color: Colors.white, boxShadow: [
           BoxShadow(
               color: Colors.black12.withOpacity(0.065),
