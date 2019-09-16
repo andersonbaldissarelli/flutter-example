@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'custom_icon.dart';
 
 void main() => runApp(MaterialApp(
       home: MyApp(),
@@ -53,9 +54,29 @@ class _MyAppState extends State<MyApp> {
                   SizedBox(
                     height: 15.0,
                   ),
-                  Row(
-                    children: <Widget>[],
-                  )
+                  Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          IconButton(
+                            icon: Icon(CustomIcons.favorite),
+                            onPressed: () {},
+                          ),
+                          Column(
+                            children: <Widget>[
+                              Text("599.00",
+                                  style: TextStyle(
+                                      color: Color(0xFFfeb0ba),
+                                      fontSize: 16.0,
+                                      fontFamily: "Helvetica")),
+                              SizedBox(
+                                height: 12.0,
+                              )
+                            ],
+                          )
+                        ],
+                      ))
                 ],
               ),
             )
