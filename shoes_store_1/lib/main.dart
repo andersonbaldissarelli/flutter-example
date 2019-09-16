@@ -47,7 +47,7 @@ class _MyAppState extends State<MyApp> {
             Align(
               alignment: Alignment.center,
               child: Padding(
-                padding: EdgeInsets.only(top: 20.0, bottom: 10.0),
+                padding: EdgeInsets.only(top: 30.0, bottom: 10.0),
                 child:
                     Image.asset("assets/logo.png", width: 72.0, height: 53.0),
               ),
@@ -68,7 +68,7 @@ class _MyAppState extends State<MyApp> {
           BoxShadow(
               color: Colors.black12.withOpacity(0.065),
               offset: Offset(0.0, -3.0),
-              blurRadius: 10.0)
+              blurRadius: 8.0)
         ]),
         child: Row(
           children: bottomNavIconList.map((item) {
@@ -80,7 +80,7 @@ class _MyAppState extends State<MyApp> {
                     _currentIndex = index;
                   });
                 },
-                child: item,
+                child: bottomNavItem(item, index == _currentIndex),
               ),
             );
           }).toList(),
@@ -90,4 +90,15 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
-bottomNavItem(Widget item, bool isSelected) => Container();
+bottomNavItem(Widget item, bool isSelected) => Container(
+      decoration: BoxDecoration(
+          boxShadow: isSelected
+              ? [
+                  BoxShadow(
+                      color: Colors.black12.withOpacity(.02),
+                      offset: Offset(0.0, 10.0),
+                      blurRadius: 10.0)
+                ]
+              : []),
+      child: item,
+    );
