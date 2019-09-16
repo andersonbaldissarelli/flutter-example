@@ -15,7 +15,14 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: new Container(),
+      body: new Column(
+        children: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(top: 30.0, bottom: 25.0),
+            //child: Image.asset(),
+          )
+        ],
+      ),
     );
   }
 }
