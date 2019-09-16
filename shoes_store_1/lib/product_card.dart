@@ -14,8 +14,8 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 320.00,
-      height: 270.0,
+      width: 330.00,
+      height: 240.0,
       decoration: BoxDecoration(
           color: Color(cardColor),
           borderRadius: BorderRadius.circular(20.00),
@@ -23,12 +23,12 @@ class ProductCard extends StatelessWidget {
       child: Column(
         children: <Widget>[
           SizedBox(
-            height: 15.0,
+            height: 10.0,
           ),
           Image.asset(
             imgUrl,
             width: 200.0,
-            height: 140.0,
+            height: 120.0,
           ),
           SizedBox(
             height: 10.0,
