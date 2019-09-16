@@ -29,12 +29,35 @@ class _MyAppState extends State<MyApp> {
             ),
             Container(
               width: double.infinity,
-              height: 320.0,
+              height: 300.0,
               decoration: BoxDecoration(
                   color: Color(0xFFfaecfb),
                   borderRadius: BorderRadius.circular(20.00),
                   border: Border.all(
                       color: Colors.grey.withOpacity(.3), width: .2)),
+              child: Column(
+                children: <Widget>[
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  Image.asset(
+                    "assets/shoes_01.png",
+                    width: 270.0,
+                    height: 170.0,
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  Text("Air Zoom Structure 22",
+                      style: TextStyle(fontSize: 25.0, fontFamily: "Raleway")),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  Row(
+                    children: <Widget>[],
+                  )
+                ],
+              ),
             )
           ],
         ),
