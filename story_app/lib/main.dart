@@ -13,6 +13,16 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Color(0xFF2d3447),
+      body: SingleChildScrollView(
+          child: Column(
+        children: <Widget>[
+          Row(
+            children: <Widget>[IconButton()],
+          )
+        ],
+      )),
+    );
   }
 }
