@@ -4,8 +4,9 @@
 
 Para obter uma API Key:
 
-[Android](https://developers.google.com/maps/documentation/android-sdk/get-api-key)
-[IOS](https://developers.google.com/maps/documentation/ios-sdk/get-api-key)
+- [Android](https://developers.google.com/maps/documentation/android-sdk/get-api-key)
+
+- [IOS](https://developers.google.com/maps/documentation/ios-sdk/get-api-key)
 
 
 1 - Mapa tipo "normal"
