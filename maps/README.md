@@ -1,16 +1,21 @@
-# maps
+# Mapa
 
-A new Flutter project.
+- Utilização da API do Google Maps e marcadores
 
-## Getting Started
+Para obter sua API Key:
 
-This project is a starting point for a Flutter application.
+- [Android](https://developers.google.com/maps/documentation/android-sdk/get-api-key)
 
-A few resources to get you started if this is your first Flutter project:
+- [IOS](https://developers.google.com/maps/documentation/ios-sdk/get-api-key)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1 - Mapa tipo "normal"
+<p align="center">
+  <img src="img1.png">
+</p>
+
+2 - Mapa tipo satélite
+
+<p align="center">
+  <img src="img2.png">
+</p>
