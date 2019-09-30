@@ -5,7 +5,7 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Tela de Login - Use a criatividade"),
+        child: Text("Tela de Login - Use a sua criatividade"),
       ),
     );
   }
