@@ -32,14 +32,14 @@ class NavigationDrawer extends StatelessWidget {
             ),
             ListTile(
               title: Text("Home"),
-              trailing: Icon(Icons.home),
+              leading: Icon(Icons.home),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
             ListTile(
               title: Text("Perfil"),
-              trailing: Icon(Icons.person),
+              leading: Icon(Icons.person),
               onTap: () {
                 Navigator.push(
                   context,
@@ -49,7 +49,7 @@ class NavigationDrawer extends StatelessWidget {
             ),
             ListTile(
               title: Text("Amigos"),
-              trailing: Icon(Icons.people),
+              leading: Icon(Icons.people),
               onTap: () {
                 Navigator.push(
                   context,
@@ -59,7 +59,7 @@ class NavigationDrawer extends StatelessWidget {
             ),
             ListTile(
               title: Text("Mapa"),
-              trailing: Icon(Icons.map),
+              leading: Icon(Icons.map),
               onTap: () {
                 Navigator.push(
                   context,
@@ -69,7 +69,7 @@ class NavigationDrawer extends StatelessWidget {
             ),
             ListTile(
               title: Text("Mensagens"),
-              trailing: Icon(Icons.message),
+              leading: Icon(Icons.message),
               onTap: () {
                 Navigator.push(
                   context,
@@ -79,7 +79,7 @@ class NavigationDrawer extends StatelessWidget {
             ),
             ListTile(
               title: Text("Configuração"),
-              trailing: Icon(Icons.settings),
+              leading: Icon(Icons.settings),
               onTap: () {
                 Navigator.push(
                   context,
@@ -95,7 +95,7 @@ class NavigationDrawer extends StatelessWidget {
             ),
             ListTile(
               title: Text("Sair"),
-              trailing: Icon(Icons.exit_to_app),
+              leading: Icon(Icons.exit_to_app),
               onTap: () {
                 Navigator.push(
                   context,
