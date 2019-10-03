@@ -2,7 +2,7 @@
 
 - Utilização da API do Google Maps e marcadores
 
-Para obter sua API Key:
+Para obter sua API Key e adicioná-la no projeto:
 
 - [Android](https://developers.google.com/maps/documentation/android-sdk/get-api-key)
 
