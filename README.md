@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="flutter.png">
+  <img src="image/flutter.png">
 </p>
 
 # flutter-projects
