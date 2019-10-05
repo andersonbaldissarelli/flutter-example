@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img src="flutter.png">
+</p>
+
 # flutter-projects
 :dart: Projects using the flutter framework
 
