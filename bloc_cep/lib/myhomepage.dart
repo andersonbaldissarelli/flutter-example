@@ -1,6 +1,8 @@
 import 'package:bloc_cep/myhomepage_bloc.dart';
 import 'package:flutter/material.dart';
 
+import 'endereco_model.dart';
+
 class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -29,6 +31,23 @@ class _MyHomePageState extends State<MyHomePage> {
                 border: OutlineInputBorder(),
               ),
             ),
+            SizedBox(
+              height: 20,
+            ),
+            StreamBuilder<EnderecoModel>(
+                stream: bloc.output,
+                initialData: EnderecoModel(bairro: "Sem bairro"),
+                builder: (context, snapshot) {
+                  if (snapshot.hasError) {
+                    return Text(
+                      "Erro na pesquisa",
+                      style: TextStyle(color: Colors.red),
+                    );
+                  }
+
+                  EnderecoModel model = snapshot.data;
+                  return Text("Bairro: ${model.bairro}");
+                }),
           ],
         ),
       ),
