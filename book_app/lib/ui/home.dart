@@ -33,75 +33,75 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Container(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        padding: EdgeInsets.only(top: 42.0, left: 24.0),
-        child: Column(
-          children: <Widget>[
-            Row(
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(right: 24.0),
-                  child: Text(
-                    "Busca",
-                    style: TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.only(top: 42, left: 24),
+          child: Column(
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(right: 24.0),
+                    child: Text(
+                      "Busca",
+                      style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
-                ),
-                Text(
-                  "Recomendados",
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.grey[500],
+                  Text(
+                    "Recomendados",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.grey[500],
+                    ),
                   ),
-                ),
-              ],
-            ),
-            Container(
-              width: MediaQuery.of(context).size.width,
-              height: 80.0,
-              child: ListView.builder(
-                  shrinkWrap: true,
-                  itemCount: categories.length,
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (BuildContext c, int index) {
-                    return Padding(
-                      padding: const EdgeInsets.only(left: 6.0, right: 6.0),
-                      child: GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            _selectedIndex = index;
-                          });
-                        },
-                        child: Chip(
-                          padding: EdgeInsets.only(left: 8.0, right: 8.0),
-                          backgroundColor: index == _selectedIndex
-                              ? Colors.blue
-                              : Colors.grey[200],
-                          label: Text(
-                            categories.elementAt(index),
-                            style: TextStyle(
-                              color: index == _selectedIndex
-                                  ? Colors.white
-                                  : Colors.grey[700],
+                ],
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: 80.0,
+                child: ListView.builder(
+                    shrinkWrap: true,
+                    itemCount: categories.length,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (BuildContext c, int index) {
+                      return Padding(
+                        padding: const EdgeInsets.only(left: 6.0, right: 6.0),
+                        child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              _selectedIndex = index;
+                            });
+                          },
+                          child: Chip(
+                            padding: EdgeInsets.only(left: 8.0, right: 8.0),
+                            backgroundColor: index == _selectedIndex
+                                ? Colors.blue
+                                : Colors.grey[200],
+                            label: Text(
+                              categories.elementAt(index),
+                              style: TextStyle(
+                                color: index == _selectedIndex
+                                    ? Colors.white
+                                    : Colors.grey[700],
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    );
-                  }),
-            ),
-            ListView.builder(
-                itemCount: categories.length,
-                shrinkWrap: true,
-                itemBuilder: (context, index) {
-                  return BookWidget();
-                })
-          ],
+                      );
+                    }),
+              ),
+              ListView.builder(
+                  itemCount: categories.length,
+                  shrinkWrap: true,
+                  itemBuilder: (context, index) {
+                    return BookWidget();
+                  })
+            ],
+          ),
         ),
       ),
     );
