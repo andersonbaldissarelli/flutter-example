@@ -8,21 +8,29 @@ class BookWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 200,
-      height: 240,
-      margin: EdgeInsets.fromLTRB(24, 12, 24, 12),
+      height: 250,
+      margin: EdgeInsets.fromLTRB(16, 12, 16, 12),
       child: Stack(
         children: <Widget>[
           Align(
             alignment: Alignment.centerRight,
-            child: Image.network(
-              imageUrl,
+            child: ClipRRect(
+              borderRadius: BorderRadius.all(
+                Radius.circular(12),
+              ),
+              child: Image.network(
+                imageUrl,
+                fit: BoxFit.fitWidth,
+                width: 200,
+              ),
             ),
           ),
           Align(
             alignment: Alignment.centerLeft,
             child: Container(
-              width: 230,
+              width: 220,
               height: 200,
+              padding: EdgeInsets.all(24),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.all(
@@ -36,10 +44,29 @@ class BookWidget extends StatelessWidget {
                 ],
               ),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("Torta de Limão"),
-                  Text("A torta de limão é gostosa"),
-                  Icon(Icons.arrow_forward_ios),
+                  Text(
+                    "Torta de Limão",
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "by Isadora",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.grey,
+                    ),
+                  ),
                 ],
               ),
             ),
