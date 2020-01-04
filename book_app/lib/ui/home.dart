@@ -1,3 +1,4 @@
+import 'package:book_app/ui/book_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -16,6 +17,8 @@ class _HomePageState extends State<HomePage> {
     "Bolos",
     "Doces",
   ];
+
+  List<String> title = ["Torta de Limão", "Torta de maça", "Torta de Abobora"];
 
   int _selectedIndex = 0;
 
@@ -92,6 +95,12 @@ class _HomePageState extends State<HomePage> {
                     );
                   }),
             ),
+            ListView.builder(
+                itemCount: categories.length,
+                shrinkWrap: true,
+                itemBuilder: (context, index) {
+                  return BookWidget();
+                })
           ],
         ),
       ),
