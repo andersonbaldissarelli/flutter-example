@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:book_app/home/bloc/HomePageState.dart';
-import 'package:book_app/home/bloc/homePageEvent.dart';
+import 'package:book_app/home/bloc/home_page_state.dart';
+import 'package:book_app/home/bloc/home_page_event.dart';
 import 'package:book_app/repository.dart';
 import 'package:flutter/cupertino.dart';
 
