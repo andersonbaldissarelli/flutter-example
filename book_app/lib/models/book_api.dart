@@ -2,7 +2,7 @@
 class BooksApiModel {
   String kind;
   int totalItems;
-  List<Items> items;
+  List<Book> items;
 
   BooksApiModel({this.kind, this.totalItems, this.items});
 
@@ -10,9 +10,9 @@ class BooksApiModel {
     kind = json['kind'];
     totalItems = json['totalItems'];
     if (json['items'] != null) {
-      items = new List<Items>();
+      items = new List<Book>();
       json['items'].forEach((v) {
-        items.add(new Items.fromJson(v));
+        items.add(new Book.fromJson(v));
       });
     }
   }
@@ -28,7 +28,7 @@ class BooksApiModel {
   }
 }
 
-class Items {
+class Book {
   String kind;
   String id;
   String etag;
@@ -38,7 +38,7 @@ class Items {
   AccessInfo accessInfo;
   SearchInfo searchInfo;
 
-  Items(
+  Book(
       {this.kind,
       this.id,
       this.etag,
@@ -48,7 +48,7 @@ class Items {
       this.accessInfo,
       this.searchInfo});
 
-  Items.fromJson(Map<String, dynamic> json) {
+  Book.fromJson(Map<String, dynamic> json) {
     kind = json['kind'];
     id = json['id'];
     etag = json['etag'];
