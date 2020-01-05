@@ -11,9 +11,9 @@ class HomePageStateLoading extends HomePageState {
   String toString() => "HomePageStateLoading";
 }
 
-class HomePageStateLoadSucess extends HomePageState {
+class HomePageStateSucess extends HomePageState {
   final List<Book> books;
-  HomePageStateLoadSucess({@required this.books});
+  HomePageStateSucess({@required this.books});
 
   @override
   String toString() => "HomePageStateLoadSucess";
