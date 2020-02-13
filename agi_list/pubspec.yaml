@@ -25,6 +25,11 @@ dependencies:
   cupertino_icons: ^0.1.2
   splashscreen: ^1.2.0
   carousel_pro: ^1.0.0
+  page_view_indicator: ^2.0.3
+  smooth_page_indicator: ^0.1.3
+  font_awesome_flutter: ^8.5.0
+  flushbar: ^1.9.1
+  firebase_auth: ^0.15.4
 
 dev_dependencies:
   flutter_test:
@@ -39,6 +44,7 @@ flutter:
     - assets/image/step1.jpg
     - assets/image/step2.jpg
     - assets/image/step3.jpg
+    - assets/image/logo.png
 
   # fonts:
   #   - family: Schyler

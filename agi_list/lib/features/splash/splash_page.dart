@@ -1,7 +1,9 @@
-import 'package:agi_list/features/step/step_page.dart';
+import 'package:agi_list/core/const/app_dimens.dart';
 import 'package:flutter/material.dart';
-import 'package:agi_list/core/const/theme.dart' as Theme;
+import 'package:agi_list/core/const/app_theme.dart';
 import 'package:splashscreen/splashscreen.dart';
+
+import '../step/step_page.dart';
 
 class SplashPage extends StatelessWidget {
   @override
@@ -11,31 +13,24 @@ class SplashPage extends StatelessWidget {
         children: <Widget>[
           SplashScreen(
             seconds: 10,
-            gradientBackground: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Theme.Colors.splashGradientEnd,
-                Theme.Colors.splashGradientStart
-              ],
-              stops: [0.0, 1.0],
-              tileMode: TileMode.repeated,
-            ),
-            navigateAfterSeconds: StepPage(),
-            loaderColor: Colors.transparent,
+            gradientBackground: AppTheme.primaryGradient,
+              navigateAfterSeconds: StepPage(),
+              loaderColor: Colors.transparent,
           ),
-          Center(
-            child: Text(
-              "agiList",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 32,
-                fontFamily: "WorkSansSemiBold",
-              ),
-            ),
-          ),
-        ],
-      ),
+                      Center(
+                        child: Text(
+                          "agiList",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: AppDimens.largest,
+                            fontFamily: "WorkSansSemiBold",
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
     );
   }
 }
+          
+

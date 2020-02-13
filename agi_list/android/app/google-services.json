@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "795052803181",
+    "firebase_url": "https://agilist-2b2ba.firebaseio.com",
+    "project_id": "agilist-2b2ba",
+    "storage_bucket": "agilist-2b2ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795052803181:android:dbf73a0b6bf6dc63dfeb64",
+        "android_client_info": {
+          "package_name": "com.example.agi_list"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795052803181-2nsu88paqm5fntnpoatr39vpbrukavcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApOudcscCmT6L9v2CAnuRkLtIUhBot8cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795052803181-2nsu88paqm5fntnpoatr39vpbrukavcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
