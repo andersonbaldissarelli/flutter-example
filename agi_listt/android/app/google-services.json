@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "937653317224",
+    "firebase_url": "https://agilistt.firebaseio.com",
+    "project_id": "agilistt",
+    "storage_bucket": "agilistt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937653317224:android:0cad23c828a7fd4f9815dd",
+        "android_client_info": {
+          "package_name": "com.example.agi_listt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937653317224-hiltvfjdit1d0e9douveljvi2jk0eq93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA54V7Yvf0Lzq09Jmh0pXGhYyQ3rDal0Tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937653317224-hiltvfjdit1d0e9douveljvi2jk0eq93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
