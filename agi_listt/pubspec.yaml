@@ -1,0 +1,70 @@
+name: agi_listt
+description: A new Flutter project.
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  splashscreen: ^1.2.0
+  carousel_pro: ^1.0.0
+  page_view_indicator: ^2.0.3
+  smooth_page_indicator: ^0.1.3
+  font_awesome_flutter: ^8.5.0
+  flushbar: ^1.9.1
+  equatable: ^1.1.0
+  bloc_pattern: ^2.5.1
+  rxdart: ^0.22.0
+  firebase_auth: ^0.15.4
+  firebase_core: ^0.4.0+9
+  cloud_firestore: ^0.13.2+1
+  dio: ^3.0.8
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+      - assets/image/step1.jpg
+      - assets/image/step2.jpg
+      - assets/image/step3.jpg
+      
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
